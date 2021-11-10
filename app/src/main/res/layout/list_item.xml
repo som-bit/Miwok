@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp">
+
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:src="@mipmap/ic_launcher"
+            android:background="@color/tan_background"
+            android:id="@+id/photu">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/mewak_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_toRightOf="@+id/photu"
+            android:paddingLeft="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            tools:text="lutti" />
+
+        <TextView
+            android:id="@+id/default_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/mewak_text_view"
+            android:layout_toRightOf="@+id/photu"
+            android:paddingLeft="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:text="one" />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_play" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
