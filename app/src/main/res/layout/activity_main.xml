@@ -20,12 +20,52 @@
     android:layout_height="match_parent"
     android:background="@color/tan_background"
     android:orientation="vertical"
-    tools:context="com.example.android.miwok.MainActivity">
+    tools:context="com.example.android.miwok.MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" >
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/mTabLayout"
+            android:layout_width="match_parent"
+            android:background="@color/primary_color"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            app:tabTextColor="@color/tan_background"
+            app:tabIndicatorColor="@android:color/holo_red_light">
+
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numbers" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Family Members" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Colors" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phrases" />
+        </android.support.design.widget.TabLayout>
+    </android.support.v4.view.ViewPager>
+
+
+
+
+
+
+
 <!--    <FrameLayout-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="88dp"-->

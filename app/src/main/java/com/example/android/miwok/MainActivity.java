@@ -16,10 +16,17 @@
 package com.example.android.miwok;
 
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+
+    private TabLayout tb;
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,21 +43,14 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the adapter onto the view pager
         viewPager.setAdapter(adapter);
+
+        tb = (TabLayout) findViewById(R.id.mTabLayout);
+        tb.setupWithViewPager(viewPager);
+
     }
-//    public void openNumbersActivity(View view){
-//        Intent i = new Intent(this,NumbersActivity.class);
-//        startActivity(i);
-//    }
-//    public void openFamilyActivity(View view){
-//        Intent i = new Intent(this,FamilyMenebersActivity.class);
-//        startActivity(i);
-//    }
-//    public void openColors(View view){
-//        Intent i = new Intent(this,ColorsActivity.class);
-//        startActivity(i);
-//    }
-//    public void openPhrases(View view){
-//        Intent i = new Intent(this,PhrasesActivity.class);
-//        startActivity(i);
-//    }
+
+
+
+
+
 }

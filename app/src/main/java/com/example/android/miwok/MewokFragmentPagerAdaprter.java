@@ -6,9 +6,19 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class MewokFragmentPagerAdaprter extends FragmentPagerAdapter {
 
+    private String[] tabTitles = new String[]{"Numbers", "Family Members", "Colors","Phrases"};
+
+
     public MewokFragmentPagerAdaprter(FragmentManager fuck){
         super(fuck);
 
+    }
+
+
+    // overriding getPageTitle()
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return tabTitles[position];
     }
     @Override
     public Fragment getItem(int pos){
