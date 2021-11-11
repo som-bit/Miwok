@@ -51,6 +51,11 @@ public class NumbersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
+
+        //setting an action bar and navigatipn button
+        getSupportActionBar().setTitle("Colors");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         //Declearing The AudioManager instance to get the AUDIO_SERVICE
         myAudioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
 

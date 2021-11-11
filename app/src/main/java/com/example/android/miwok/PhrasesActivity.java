@@ -49,6 +49,11 @@ public class PhrasesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phrases);
+
+        //setting an action bar and navigatipn button
+        getSupportActionBar().setTitle("Colors");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        
         myAudioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
 
         ArrayList<Word> words = new ArrayList<Word>();

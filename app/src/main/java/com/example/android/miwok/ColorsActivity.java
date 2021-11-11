@@ -48,7 +48,13 @@ public class ColorsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_colors);
+        //setting an action bar and navigatipn button
+        getSupportActionBar().setTitle("Colors");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         myAudioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
+
+
 
         ArrayList<Word> words = new ArrayList<Word>();
         words.add(new Word("Red", "Wetetti",R.drawable.color_red,R.raw.color_red));

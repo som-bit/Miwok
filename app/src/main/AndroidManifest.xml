@@ -11,19 +11,23 @@
         <activity
             android:name=".PhrasesActivity"
             android:exported="true"
-            android:label="Phrases"/>
+            android:label="Phrases"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".ColorsActivity"
             android:exported="true"
-            android:label="Colors"/>
+            android:label="Colors"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".FamilyMenebersActivity"
             android:exported="true"
-            android:label="Family Member"/>
+            android:label="Family Member"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".NumbersActivity"
             android:label="Numbers"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
