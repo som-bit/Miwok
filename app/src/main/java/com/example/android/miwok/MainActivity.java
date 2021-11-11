@@ -15,10 +15,9 @@
  */
 package com.example.android.miwok;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,21 +27,30 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
+
+        // Find the view pager that will allow the user to swipe between fragments
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+
+        // Create an adapter that knows which fragment should be shown on each page
+       MewokFragmentPagerAdaprter adapter = new MewokFragmentPagerAdaprter (getSupportFragmentManager());
+
+        // Set the adapter onto the view pager
+        viewPager.setAdapter(adapter);
     }
-    public void openNumbersActivity(View view){
-        Intent i = new Intent(this,NumbersActivity.class);
-        startActivity(i);
-    }
-    public void openFamilyActivity(View view){
-        Intent i = new Intent(this,FamilyMenebersActivity.class);
-        startActivity(i);
-    }
-    public void openColors(View view){
-        Intent i = new Intent(this,ColorsActivity.class);
-        startActivity(i);
-    }
-    public void openPhrases(View view){
-        Intent i = new Intent(this,PhrasesActivity.class);
-        startActivity(i);
-    }
+//    public void openNumbersActivity(View view){
+//        Intent i = new Intent(this,NumbersActivity.class);
+//        startActivity(i);
+//    }
+//    public void openFamilyActivity(View view){
+//        Intent i = new Intent(this,FamilyMenebersActivity.class);
+//        startActivity(i);
+//    }
+//    public void openColors(View view){
+//        Intent i = new Intent(this,ColorsActivity.class);
+//        startActivity(i);
+//    }
+//    public void openPhrases(View view){
+//        Intent i = new Intent(this,PhrasesActivity.class);
+//        startActivity(i);
+//    }
 }

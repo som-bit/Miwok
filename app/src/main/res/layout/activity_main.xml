@@ -21,69 +21,74 @@
     android:background="@color/tan_background"
     android:orientation="vertical"
     tools:context="com.example.android.miwok.MainActivity">
-    <FrameLayout
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:background="@color/category_numbers">
+        android:layout_height="match_parent" />
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="88dp"-->
+<!--        android:background="@color/category_numbers">-->
 
-        <TextView
-        android:layout_height="88dp"
-        android:id="@+id/numbers"
-        style="@style/CategoryStyle"
-        android:textSize="20sp"
-        android:textColor="#ffffff"
-        android:background="?android:attr/selectableItemBackground"
-        android:text="@string/category_numbers"
-        android:paddingLeft="16dp"
-        android:onClick="openNumbersActivity"/>
-    </FrameLayout>
+<!--        <TextView-->
+<!--        android:layout_height="88dp"-->
+<!--        android:id="@+id/numbers"-->
+<!--        style="@style/CategoryStyle"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:background="?android:attr/selectableItemBackground"-->
+<!--        android:text="@string/category_numbers"-->
+<!--        android:paddingLeft="16dp"-->
+<!--        android:onClick="openNumbersActivity"/>-->
+<!--    </FrameLayout>-->
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:background="@color/category_family">
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="88dp"-->
+<!--        android:background="@color/category_family">-->
 
-        <TextView
-        android:id="@+id/family"
-        style="@style/CategoryStyle"
-        android:background="?android:attr/selectableItemBackground"
-        android:text="@string/category_family"
-        android:textSize="20sp"
-        android:layout_height="88dp"
-        android:paddingLeft="16dp"
-        android:onClick="openFamilyActivity"/>
-    </FrameLayout>
+<!--        <TextView-->
+<!--        android:id="@+id/family"-->
+<!--        style="@style/CategoryStyle"-->
+<!--        android:background="?android:attr/selectableItemBackground"-->
+<!--        android:text="@string/category_family"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_height="88dp"-->
+<!--        android:paddingLeft="16dp"-->
+<!--        android:onClick="openFamilyActivity"/>-->
+<!--    </FrameLayout>-->
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:background="@color/category_colors">
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="88dp"-->
+<!--        android:background="@color/category_colors">-->
 
-        <TextView
-        android:id="@+id/colors"
-        style="@style/CategoryStyle"
-        android:textSize="20sp"
-        android:layout_height="88dp"
-        android:background="@color/category_colors"
-        android:text="@string/category_colors"
-        android:paddingLeft="20dp"
-        android:onClick="openColors"/>
-    </FrameLayout>
+<!--        <TextView-->
+<!--        android:id="@+id/colors"-->
+<!--        style="@style/CategoryStyle"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_height="88dp"-->
+<!--        android:background="@color/category_colors"-->
+<!--        android:text="@string/category_colors"-->
+<!--        android:paddingLeft="20dp"-->
+<!--        android:onClick="openColors"/>-->
+<!--    </FrameLayout>-->
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:background="@color/category_phrases">
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="88dp"-->
+<!--        android:background="@color/category_phrases">-->
 
-        <TextView
-        android:id="@+id/phrases"
-        style="@style/CategoryStyle"
-        android:textSize="20sp"
-        android:background="@color/category_phrases"
-        android:text="@string/category_phrases"
-        android:layout_height="88dp"
-        android:paddingLeft="16dp"
-        android:onClick="openPhrases"/>
-    </FrameLayout>
+<!--        <TextView-->
+<!--        android:id="@+id/phrases"-->
+<!--        style="@style/CategoryStyle"-->
+<!--        android:textSize="20sp"-->
+<!--        android:background="@color/category_phrases"-->
+<!--        android:text="@string/category_phrases"-->
+<!--        android:layout_height="88dp"-->
+<!--        android:paddingLeft="16dp"-->
+<!--        android:onClick="openPhrases"/>-->
+<!--    </FrameLayout>-->
 
 </LinearLayout>
